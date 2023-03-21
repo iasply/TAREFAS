@@ -1,0 +1,125 @@
+*{
+margin: 0;
+padding: 0;
+
+}
+body {
+    background-color: #1C1C26;
+}
+.entrada {
+    display: flex;
+    justify-content: center;
+    padding: 100px;
+}
+#caixaDeEntrada {
+    text-align: left;
+    font-size: 35px;
+    text-indent: 5%;
+    width: 80%;
+    height: 100px;
+   
+    border-radius: 10px 0px 0px 10px;
+    border: 3px solid black;
+    
+    border-right: 0;
+    appearance: none;
+}
+
+#caixaDeEntrada:focus{
+    box-shadow: 0 0 0 0;
+    outline: 0;
+    height: 100px;
+}
+
+.botaoAdicionar {
+    padding: 25px;
+    font-size: 35px;
+    text-align: center;
+    width: auto;
+    border-radius: 0px 10px 10px 0px;
+    border: 3px solid black;
+    background-color: #223D73;
+    border-left: none;
+    cursor: pointer;
+    
+}
+
+.botaoAdicionar:hover{ 
+    background-color: #447EF2;
+    width: auto;
+}
+
+.tarefas { 
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+/*//////////////*/
+.saida {
+    background-color: whitesmoke;
+    display: flex;
+    
+    justify-content: center;
+    align-content: center;
+    width: 80%;
+    height: 50px;
+    align-items: center;
+    
+    border-radius: 5px 6px 6px 5px;
+    margin-top: 50px;
+
+}
+
+.checkbox {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  cursor: pointer;
+  height: 28px;
+  width: 28px;
+  flex-grow: 1;
+  padding-top: 10px;
+}
+
+.checkbox::after{
+  border: 2px solid #fff;
+  content: "";
+  height: 6px;
+  left: 7px;
+  opacity: 0;
+  transform: rotate(-45deg);
+  width: 12px;
+ 
+}
+
+.textoSaida{
+    display: inline-block;
+    font-weight: 900;
+    font-size: 20px;
+    width: 70%;
+    padding: 10px 0px;
+    flex-grow: 1;
+    text-indent: 5px;
+    overflow: visible;
+}
+.deletar{
+    display: inline-block;
+    width: 10%;
+    background-color: #6E1F12;
+    justify-content: left;
+    text-align: center;
+    width: 15%;
+    height: 50px;
+    flex-grow: 1;
+    border: 0;
+    border-radius: 0px 5px 5px 0px;
+    font-size: 25px;
+}
+.deletar:hover{
+    background-color: rgb(255, 0, 0);
+}
+/*
+
+deletar*/
