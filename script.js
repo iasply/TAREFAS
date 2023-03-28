@@ -1,14 +1,14 @@
 function deletar(vai){
-    console.log(vai)
     let divTarefaExcluir=document.getElementById(`${vai}`)
+    divTarefaExcluir == null ? "":divTarefaExcluir.remove()
     
-    divTarefaExcluir.style.display =  "none";
-
 }
 
 function adicionar(){
-
-let adicionarTarefa = document.querySelector(".tarefas")
+if(caixaDeEntrada.value==""){
+    window.alert("digite algo")
+}else{
+    let adicionarTarefa = document.querySelector(".tarefas")
 ///DIV saida
  let divSaida = document.createElement('div')
  divSaida.classList.add("saida")
@@ -17,6 +17,13 @@ let adicionarTarefa = document.querySelector(".tarefas")
 let inputSaida = document.createElement('input')
 inputSaida.classList.add("checkbox")
 inputSaida.type = "checkbox"
+inputSaida.onclick = function (){
+    if(inputSaida.checked){
+        pSaida.style.textDecoration = "line-through"
+    }else{
+        pSaida.style.textDecoration = "none"
+    }
+}
 divSaida.appendChild(inputSaida)
 ///P saida
 let pSaida = document.createElement('p')
@@ -36,18 +43,19 @@ divSaida.appendChild(buttonDeletar)
 
 adicionarTarefa.append(divSaida)
 document.querySelector("#caixaDeEntrada").value = ""
+}
+
 
 
 }
 
 function pegar(event) {
-    console.log(event.target.id)
     if(event.target.id == "caixaDeEntrada"){
         return ""
     }else{
         deletar(event.target.id)
     }
     
-    
 }
+
 document.addEventListener('click', pegar)
