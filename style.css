@@ -55,23 +55,23 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    
 }
 /*//////////////*/
 .saida {
     background-color: whitesmoke;
     display: flex;
-    
     justify-content: center;
     align-content: center;
     width: 80%;
     height: 50px;
     align-items: center;
-    
-    border-radius: 5px 6px 6px 5px;
+    border-radius: 5px 10px 10px 5px;
+    border: 3px solid black;
     margin-top: 50px;
 
 }
-
+/*/////////////////////////////*/
 .checkbox {
   background-color: #fff;
   border: 1px solid #ccc;
@@ -81,6 +81,7 @@ body {
   width: 28px;
   flex-grow: 1;
   padding-top: 10px;
+  
 }
 
 .checkbox::after{
@@ -93,7 +94,7 @@ body {
   width: 12px;
  
 }
-
+/*/////////////////////////////*/
 .textoSaida{
     display: inline-block;
     font-weight: 900;
@@ -103,6 +104,7 @@ body {
     flex-grow: 1;
     text-indent: 5px;
     overflow: visible;
+    
 }
 .deletar{
     display: inline-block;
@@ -116,9 +118,11 @@ body {
     border: 0;
     border-radius: 0px 5px 5px 0px;
     font-size: 25px;
+    
 }
 .deletar:hover{
     background-color: rgb(255, 0, 0);
+    cursor: pointer;
 }
 /*
 
